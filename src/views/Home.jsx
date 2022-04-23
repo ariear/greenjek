@@ -6,13 +6,7 @@ import Transport from '../component/Home/Transport';
 import Handling from '../component/Home/Handling';
 
 function Home() {
-    const [loaded , setLoaded] = useState(true)
-
-    useEffect(() => {
-        window.addEventListener('load', () => {
-            setLoaded(false)
-        })
-    })
+    const [loaded , setLoaded] = useState(false)
     
     return (
     <div className='bg-[#FBFCFD]'>
