@@ -1,4 +1,4 @@
-import {React , useState , useEffect} from 'react';
+import {React} from 'react';
 import Cari from '../component/Home/Cari'
 import Awan from '../component/Home/Awan'
 import Price from '../component/Home/Price'
@@ -6,19 +6,9 @@ import Transport from '../component/Home/Transport';
 import Handling from '../component/Home/Handling';
 
 function Home() {
-    const [loaded , setLoaded] = useState(false)
     
     return (
     <div className='bg-[#FBFCFD]'>
-
-        {
-            loaded && 
-                <div className="fixed top-0 left-0 w-screen h-screen bg-[#5CB30B] z-50 flex justify-center items-center">
-                    <img src="/img/load.svg" alt="" />
-                </div>
-        }
-
-        
         <img src="/img/blob-back.png" alt="blob" className="absolute bottom-0 left-0" />
         <img src="/img/rightblob.png" className="absolute bottom-0 right-0" alt="rightblob" />
         <div className="flex lg:justify-around min-h-screen items-center relative overflow-hidden">
